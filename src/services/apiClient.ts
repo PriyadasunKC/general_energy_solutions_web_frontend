@@ -85,13 +85,13 @@ class APIClient {
         }
 
         // Add request timestamp for debugging
-        if (process.env.NODE_ENV === 'development') {
-            console.log(`[API Request] ${config.method?.toUpperCase()} ${config.url}`, {
-                timestamp: new Date().toISOString(),
-                data: config.data,
-                params: config.params,
-            });
-        }
+        // if (process.env.NODE_ENV === 'development') {
+        //     console.log(`[API Request] ${config.method?.toUpperCase()} ${config.url}`, {
+        //         timestamp: new Date().toISOString(),
+        //         data: config.data,
+        //         params: config.params,
+        //     });
+        // }
 
         return config;
     }
@@ -103,13 +103,13 @@ class APIClient {
         const originalRequest = error.config;
 
         // Log error for debugging
-        if (process.env.NODE_ENV === 'development') {
-            console.error(`[API Error] ${error.response?.status} ${error.config?.url}`, {
-                timestamp: new Date().toISOString(),
-                error: error.response?.data,
-                status: error.response?.status,
-            });
-        }
+        // if (process.env.NODE_ENV === 'development') {
+        //     console.error(`[API Error] ${error.response?.status} ${error.config?.url}`, {
+        //         timestamp: new Date().toISOString(),
+        //         error: error.response?.data,
+        //         status: error.response?.status,
+        //     });
+        // }
 
         // Handle 401 Unauthorized errors
         if (error.response?.status === 401 && !originalRequest._retry) {

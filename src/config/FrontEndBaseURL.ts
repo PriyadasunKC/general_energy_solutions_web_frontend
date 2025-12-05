@@ -1,3 +1,3 @@
 // @/config/FrontEndBaseURL.ts
 
-export const FrontEndBaseURL = process.env.FrontEndBaseURL || "http://localhost:3000"
+export const FrontEndBaseURL = "https://generalenergysolutionswebfrontend.vercel.app/"
