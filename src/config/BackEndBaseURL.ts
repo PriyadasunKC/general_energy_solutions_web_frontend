@@ -1,3 +1,3 @@
 // @/config/BackEndBaseURL.ts
 
-export const BackEndBaseURL = process.env.BASE_URL_BACKEND || "http://localhost:3001"
+export const BackEndBaseURL = "https://057c2e350062.ngrok-free.app"
