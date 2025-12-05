@@ -1,3 +1,3 @@
 // @/config/FrontEndBaseURL.ts
 
-export const FrontEndBaseURL = "https://generalenergysolutionswebfrontend.vercel.app/"
+export const FrontEndBaseURL = "https://generalenergysolutionsweb.vercel.app/"
