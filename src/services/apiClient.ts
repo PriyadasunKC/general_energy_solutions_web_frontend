@@ -9,9 +9,7 @@ import axios, {
 import { TokenManager } from './tokenManager';
 import { AUTH_ENDPOINTS, RefreshTokenResponse, APIError } from '../types/authTypes';
 import type { AppDispatch } from '../store/store';
-
-// Base URL from environment or fallback
-export const BackEndBaseURL = `https://057c2e350062.ngrok-free.app`;
+import {BackEndBaseURL}  from "../config/BackEndBaseURL"
 
 /**
  * API Client with automatic token management and refresh
