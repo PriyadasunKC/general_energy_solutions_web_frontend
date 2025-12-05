@@ -1,3 +1,3 @@
 // @/config/BackEndBaseURL.ts
 
-export const BackEndBaseURL = "https://ngrok.com/r/http-request"
+export const BackEndBaseURL = "https://megan-nonnervous-ferly.ngrok-free.dev"
